@@ -1,20 +1,54 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 1.6;
+    text-align: center;
+    background-color: white;
+    color: #333;
+    display: grid;
+    place-items: center;
     height: 100vh;
 }
-
-.container {
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #625b5b;
+    }
+    
+    li {
+      float: left;
+    }
+  li a {
+      font-size: 25px;
+      display: block;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    li a:hover {
+      background-color: grey;
+      font-size: x-large;
+    }
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+  }
+  
+  nav ul li {
+      margin-right: 20px;
+  }
+  .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+    text-align: center;
 }
 
 h1 {
@@ -56,3 +90,75 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+.footer{
+    background:#3f3c3c;
+    padding:15px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    /* Voor een afbeelding aan de linkerzijde */
+.img-left {
+    float: left;
+    margin-right: 20px; /* Ruimte tussen afbeelding en tekst */
+    margin-bottom: 20px;
+  }
+  
+  /* Voor een afbeelding aan de rechterzijde */
+  .img-right {
+    float: right;
+    margin-left: 20px; /* Ruimte tussen afbeelding en tekst */
+    margin-bottom: 20px;
+  }
+  
+  /* Optioneel: Styling voor afbeeldingen */
+  .img {
+    max-width: 100%; /* Afbeelding schaalt proportioneel */
+    height: auto; /* Houdt de aspectratio */
+    border-radius: 8px; /* Voeg afgeronde hoeken toe */
+  }

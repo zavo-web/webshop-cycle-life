@@ -59,6 +59,7 @@ nav ul li {
     text-align: center;
   }
   .footer{
+
     background:hsl(0, 0%, 23%);
     padding:15px 0px;
     font-family: 'Play', sans-serif;
@@ -84,7 +85,7 @@ nav ul li {
   height: auto; /* Houdt de aspectratio */
   border-radius: 8px; /* Voeg afgeronde hoeken toe */
 }
-    
+   
     .footer .row{
     width:100%;
     margin:1% 0%;
@@ -129,4 +130,5 @@ nav ul li {
     }
     .footer .row a i{
     margin:0% 3%;
+
     }
