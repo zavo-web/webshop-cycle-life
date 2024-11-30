@@ -58,6 +58,22 @@ nav ul li {
     justify-items: center;
     text-align: center;
   }
+  {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+.about-us {
+    max-width: 800px;
+    margin: auto;
+}
+.contact-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
   .footer{
 
     background:hsl(0, 0%, 23%);
