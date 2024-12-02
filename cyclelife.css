@@ -7,144 +7,136 @@ body {
   background-color: rgb(251, 255, 254);
   color: #333;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #484848;
-  }
-  
-  li {
-    float: left;
-  }
-li a {
-    font-size: 25px;
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
 
-  li a:hover {
-    background-color: grey;
-    font-size: x-large;
-  }
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #484848;
 }
 
+li {
+  float: left;
+}
+
+li a {
+  font-size: 25px;
+  display: block;
+  color: #000; /* Consistente kleur */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+  font-size: larger; /* Gebruik meer intuïtieve waarden */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
-.grid-koersfietsen {
-    display: grid;
-    grid-template-columns: 415px 415px 415px;
-    justify-items: center;
-    text-align: center;
-  }
-  .grid-mountainbike {
-    display: grid;
-    grid-template-columns: 415px 415px 415px;
-    justify-items: center;
-    text-align: center;
-  }
-  .grid-elecktrische {
-    display: grid;
-    grid-template-columns: 415px 415px 415px;
-    justify-items: center;
-    text-align: center;
-  }
-  {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
-}
-.about-us {
-    max-width: 799px;
-    margin: auto;
-}
-.contact-info {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-  .footer{
 
-    background:hsl(0, 0%, 23%);
-    padding:15px 0px;
-    font-family: 'Play', sans-serif;
-    text-align:center;
-    }
-    /* Voor een afbeelding aan de linkerzijde */
+/* Flexibele grid-indeling */
+.grid-koersfietsen,
+.grid-mountainbike,
+.grid-elecktrische {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+}
+
+.about-us {
+  max-width: 800px; /* Ronde waarde */
+  margin: auto;
+}
+
+.contact-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.footer {
+  background: hsl(0, 0%, 23%);
+  padding: 15px 0;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0;
+  padding: 0.6% 0;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0 1%;
+}
+
+/* Afbeeldingen styling */
 .img-left {
   float: left;
-  margin-right: 20px; /* Ruimte tussen afbeelding en tekst */
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
-/* Voor een afbeelding aan de rechterzijde */
 .img-right {
   float: right;
-  margin-left: 20px; /* Ruimte tussen afbeelding en tekst */
+  margin-left: 20px;
   margin-bottom: 20px;
 }
 
-/* Optioneel: Styling voor afbeeldingen */
 .img {
-  max-width: 100%; /* Afbeelding schaalt proportioneel */
-  height: auto; /* Houdt de aspectratio */
-  border-radius: 8px; /* Voeg afgeronde hoeken toe */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-   
-    .footer .row{
-    width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
-    color:gray;
-    font-size:0.8em;
-    }
-    
-    .footer .row a{
-    text-decoration:none;
-    color:gray;
-    transition:0.5s;
-    }
-    
-    .footer .row a:hover{
-    color:#fff;
-    }
-    
-    .footer .row ul{
-    width:100%;
-    }
-    
-    .footer .row ul li{
-    display:inline-block;
-    margin:0px 30px;
-    }
-    
-    .footer .row a i{
-    font-size:2em;
-    margin:0% 1%;
-    }
-    
-    @media (max-width:720px){
-    .footer{
-    text-align:left;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
 
-    }
+/* Responsieve footer */
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0 3%;
+  }
+}
