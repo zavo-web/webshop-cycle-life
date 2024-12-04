@@ -60,11 +60,6 @@ nav ul li {
     justify-items: center;
     text-align: center;
   }
-  .footer{
-    font-family: Arial, sans-serif;
-    margin:20px;
-    line-height: 1.6;
-  }
 .about-us {
     max-width: 799px;
     margin: auto;
@@ -79,101 +74,76 @@ nav ul li {
 
 .footer {
   background: hsl(0, 0%, 23%);
-  padding: 15px 0;
+  padding: 20px;
   font-family: 'Play', sans-serif;
+  color: gray;
   text-align: center;
 }
 
 .footer .row {
-  width: 100%;
-  margin: 1% 0;
-  padding: 0.6% 0;
-  color: gray;
-  font-size: 0.8em;
+  margin-bottom: 20px;
 }
 
-.footer .row a {
+.footer .social-links a img {
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-links a img:hover {
+  transform: scale(1.2);
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer .footer-links ul li {
+  margin: 0;
+}
+
+.footer .footer-links ul li a {
+  color: gray;
   text-decoration: none;
-  color: gray;
-  transition: 0.5s;
+  transition: color 0.3s ease;
 }
 
-.footer .row a:hover {
+.footer .footer-links ul li a:hover {
   color: #fff;
 }
 
-.footer .row ul {
-  width: 100%;
+.footer .footer-copy {
+  font-size: 0.9em;
+  color: gray;
+  margin-top: 10px;
 }
 
-.footer .row ul li {
-  display: inline-block;
-  margin: 0 30px;
+.footer .footer-copy p {
+  margin: 0;
 }
 
-.footer .row a i {
-  font-size: 2em;
-  margin: 0 1%;
-}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 20px;
+  }
 
-/* Afbeeldingen styling */
-.img-left {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
+  .footer .social-links {
+    text-align: center;
+  }
 
-.img-right {
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
+  .footer .footer-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.img {
-  max-width: 100%; /* Afbeelding schaalt proportioneel */
-  height: auto; /* Houdt de aspectratio */
-  border-radius: 8px; /* Voeg afgeronde hoeken toe */
+  .footer .footer-links ul li {
+    margin-bottom: 10px;
+  }
 }
-   
-    .footer .row{
-    width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
-    color:gray;
-    font-size:0.8em;
-    }
-    
-    .footer .row a{
-    text-decoration:none;
-    color:gray;
-    transition:0.5s;
-    }
-    
-    .footer .row a:hover{
-    color:#fff;
-    }
-    
-    .footer .row ul{
-    width:100%;
-    }
-    
-    .footer .row ul li{
-    display:inline-block;
-    margin:0px 30px;
-    }
-    
-    .footer .row a i{
-    font-size:2em;
-    margin:0% 1%;
-    }
-    
-    @media (max-width:720px){}
-    .footer{
-    text-align:left;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
